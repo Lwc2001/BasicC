@@ -1,0 +1,27 @@
+编辑器 & 编译器
+编辑器 ： 记事本 、 notepad 、 sublime text、 vscode 、 pycharm、IDEA 、eclipse 、QT 
+编译器 ： gcc 、 g++ 、 DEV-CPP 、 vc6.0
+
+编译分为四个步骤
+1、预处理
+一、展开头文件 ： 通俗来讲就是将 fiename 文件中的代码写入到当前文件中
+二、宏替换 
+三、去掉注释
+四、条件编译 ： 对#ifndef #define #endif 进行判断检查，也正是在这一步 #ifndef #define #endif 的作用体现出来，防止头文件被多次重复引用
+2、编译
+3、汇编
+4、链接
+
+1、预处理(生成.i预处理文件)             gcc -E main.c > main.i
+2、编译(生成.s汇编文件)                 gcc -S main.i
+3、汇编(生成.o目标文件)                 gcc -c main.s
+4、链接(生成.out(Linux上可执行文件))    gcc main.o
+
+
+
+call:函数调用 call	_Z6printfPKcz@PLT
+b:breakpoint
+r:run
+call + 函数名：调用函数
+n:next
+
